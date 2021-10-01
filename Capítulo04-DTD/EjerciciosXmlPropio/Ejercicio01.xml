@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ordenador [
+    <!ELEMENT ordenador (placabase*)>
+    <!ELEMENT placabase (microprocesador, memoria, modelo, fabricante)>
+    <!ELEMENT microprocesador (#PCDATA)>
+    <!ELEMENT memoria (#PCDATA)>
+    <!ELEMENT modelo (#PCDATA)>
+    <!ELEMENT fabricante (Asus | Intel)>
+    <!ELEMENT Asus EMPTY>
+    <!ELEMENT Intel EMPTY>
+]> 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ordenador>
+    <placabase>
+        <microprocesador>1</microprocesador>
+        <memoria>2</memoria>
+        <modelo>3</modelo>
+        <fabricante>
+            <Asus/>
+        </fabricante>
+    </placabase>
+    <placabase>
+        <microprocesador>1</microprocesador>
+        <memoria>2</memoria>
+        <modelo>3</modelo>
+        <fabricante>
+            <Intel/>
+        </fabricante>
+    </placabase>
+ 
+</ordenador>
