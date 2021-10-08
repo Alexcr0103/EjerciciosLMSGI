@@ -23,7 +23,7 @@
 <musica>
     <artistas>
         <artista="Melendi" fecha="3-6-1978" nacionalidad="es1" codigo="m1"/>
-        <artista="Mago de OZ" fecha="7-1-1969" nacionalidad="española" codigo="m2"/>
+        <artista="Mago de OZ" fecha="8-1-1969" nacionalidad="española" codigo="m2"/>
     </artistas>
     <cancion>
         <cancion="Violinista en tu tejado" duracion="3:45" artista="m1"/>
