@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE musica [
+<!ELEMENT musica (artistas, canciones, nacionalidades)* >
+<!ELEMENT artistas (artista)*>
+<!ELEMENT artista EMPTY>
+<!ELEMENT canciones (cancion)*>
+<!ELEMENT cancion EMPTY>
+<!ELEMENT nacionalidades (nacionalidad)*>
+<!ELEMENT nacionalidad EMPTY>
+<!ATTLIST artista nombre CDATA #REQUIRED>
+<!ATTLIST artista codigo ID #REQUIRED>
+<!ATTLIST artista fecha CDATA #IMPLIED>
+<!ATTLIST artista nacionalidad IDREFS #I>
+<!ATTLIST cancion nombre NMTOKENS #REQUIRED>
+<!ATTLIST cancion duracion CDATA #IMPLIED>
+<!ATTLIST cancion artista IDREFS #REQUIERED>
+<!ATTLIST nacionalidad nombre CDATA #IMPLIED>
+<!ATTLIST nacionalidad codigo ID #REQUIRED>
+]>
+
+
+
+<musica>
+    <artistas>
+        <artista="Melendi" fecha="3-6-1978" nacionalidad="es1" codigo="m1"/>
+        <artista="Mago de OZ" fecha="7-1-1969" nacionalidad="española" codigo="m2"/>
+    </artistas>
+    <cancion>
+        <cancion="Violinista en tu tejado" duracion="3:45" artista="m1"/>
+        <cancion="Molinos de viento" duracion="4:53" artista="m2"/>
+    </cancion>
+    <nacionalidad>
+        <nacionalidad="española" codigo="es1"/>>
+     <nacionalidad="española" codigo="es2"/>
+    </nacionalidad>
+</musica>
