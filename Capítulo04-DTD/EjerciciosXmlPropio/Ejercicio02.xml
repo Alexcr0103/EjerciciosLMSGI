@@ -22,15 +22,15 @@
 
 <musica>
     <artistas>
-        <artista="Melendi" fecha="3-6-1978" nacionalidad="es1" codigo="m1"/>
-        <artista="Mago de OZ" fecha="8-1-1969" nacionalidad="española" codigo="m2"/>
+        <artista nombre="Melendi" fecha="3-6-1978" nacionalidad="es1" codigo="m1"/>
+        <artistan nombre="Mago de OZ" fecha="8-1-1969" nacionalidad="española" codigo="m2"/>
     </artistas>
     <canciones>
-        <cancion="Violinista en tu tejado" duracion="3:45" artista="m1"/>
-        <cancion="Molinos de viento" duracion="4:53" artista="m2"/>
+        <cancion nombre="Violinista en tu tejado" duracion="3:45" artista="m1"/>
+        <cancion nombre="Molinos de viento" duracion="4:53" artista="m2"/>
     </canciones>
     <nacionalidades>
-        <nacionalidad="española" codigo="es1"/>
-        <nacionalidad="española" codigo="es2"/>
+        <nacionalidad nombre="española" codigo="es1"/>
+        <nacionalidad nombre="española" codigo="es2"/>
     </nacionalidades>
 </musica>
