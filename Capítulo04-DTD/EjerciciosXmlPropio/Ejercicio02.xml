@@ -13,7 +13,7 @@
 <!ATTLIST artista nacionalidad IDREFS #IMPLIED>
 <!ATTLIST cancion nombre NMTOKENS #REQUIRED>
 <!ATTLIST cancion duracion CDATA #IMPLIED>
-<!ATTLIST cancion artista IDREF #REQUIERED>
+<!ATTLIST cancion artista IDREF #REQUIRED>
 <!ATTLIST nacionalidad nombre CDATA #IMPLIED>
 <!ATTLIST nacionalidad codigo ID #REQUIRED>
 ]>
@@ -23,7 +23,7 @@
 <musica>
     <artistas>
         <artista nombre="Melendi" fecha="3-6-1978" nacionalidad="es1" codigo="m1"/>
-        <artistan nombre="Mago de OZ" fecha="8-1-1969" nacionalidad="española" codigo="m2"/>
+        <artista nombre="Mago de OZ" fecha="8-1-1969" nacionalidad="es2" codigo="m2"/>
     </artistas>
     <canciones>
         <cancion nombre="Violinista en tu tejado" duracion="3:45" artista="m1"/>
