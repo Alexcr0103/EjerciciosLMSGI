@@ -30,7 +30,7 @@
         <cancion="Molinos de viento" duracion="4:53" artista="m2"/>
     </canciones>
     <nacionalidades>
-        <nacionalidad="española" codigo="es1"/>>
+        <nacionalidad="española" codigo="es1"/>
         <nacionalidad="española" codigo="es2"/>
     </nacionalidades>
 </musica>
