@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE DragonBall SYSTEM "DragonBall.dtd">
+
+<DragonBall>
+    <heroe nombre="Goku" superpoder="kamehameha" nemesis="Freezer" amigos="Gohan Pan"/>
+    <heroe nombre="Pan" superpoder="puñetazo" nemesis="Celula"/>
+    <heroe nombre="Gohan" superpoder="puñetazo" nemesis="Celula"/>
+
+    <villano nombre="Freezer" superpoder="ira" nemesis="Goku"/>
+    <villano nombre="Celula" superpoder="ira" nemesis="Pan" estado="vivo"/>
+
+    <tipoPersonaje>
+        <Saiyayin>Goku Pan Goahn</Saiyayin>
+    </tipoPersonaje>
+    
+    <medio>He visto la serie DragonBall
+        <anime>
+            <DragonBallZ />
+            <DragonBallGT />
+        </anime>
+        <manga />
+    </medio>
+</DragonBall>

@@ -1,0 +1,25 @@
+<!ELEMENT DragonBall (heroe+,villano*,tipoPersonaje?,medio?)*>
+
+<!ENTITY % datospersonaje "nombre ID #REQUIRED
+                           superpoder (kamehameha | puñetazo | ira) #IMPLIED
+                           nemesis IDREF #IMPLIED
+                           amigos IDREFS #IMPLIED">
+
+<!ELEMENT heroe EMPTY>
+ <!ATTLIST heroe %datospersonaje;>
+ 
+<!ELEMENT villano EMPTY>
+ <!ATTLIST villano %datospersonaje;
+                   estado CDATA #FIXED "vivo">
+
+
+<!ELEMENT tipoPersonaje (Saiyayin)>
+<!ELEMENT Saiyayin (#PCDATA)>
+
+<!ELEMENT medio (#PCDATA | manga | anime)*>
+  <!ELEMENT anime (DragonBallZ+, (DragonBallGT |DragonBallSuper))>
+  <!ELEMENT DragonBallZ EMPTY>
+  <!ELEMENT DragonBallGT EMPTY>
+  <!ELEMENT DragonBallSuper EMPTY>
+
+  <!ELEMENT manga EMPTY>
