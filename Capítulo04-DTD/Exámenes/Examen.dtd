@@ -1,0 +1,32 @@
+<!ELEMENT Familia (primergrado+,segundogrado*,parentesco?,estadocivil?)*>
+
+<!ENTITY % datosfamiliar  "nombre CDATA #REQUIRED
+                           codigo ID #REQUIRED 
+                           relación (buena | mala | normal) #IMPLIED
+                           edad CDATA #REQUIRED
+                           contacto CDATA #IMPLIED">
+
+<!ELEMENT primergrado EMPTY>
+ <!ATTLIST primergrado %datosfamiliar;>
+ 
+<!ELEMENT segundogrado EMPTY>
+ <!ATTLIST segundogrado %datosfamiliar;
+                        estado CDATA #FIXED "casado">
+
+<!ELEMENT estadocivil (soltero|casado)>
+<!ELEMENT soltero (#PCDATA)>
+<!ELEMENT casado EMPTY>
+
+<!ELEMENT parentesco (#PCDATA | padres | hermanos| primo)*>
+  <!ELEMENT padres (padre,madre?)>
+  <!ELEMENT padre EMPTY>
+  <!ATTLIST padre codigo IDREFS #REQUIRED>
+  <!ELEMENT madre EMPTY>
+  <!ATTLIST madre codigo IDREFS #REQUIRED>
+  <!ELEMENT hermanos (hermanosangre+, (hermanopolitico |hermanastro))>
+  <!ELEMENT hermanosangre EMPTY>
+  <!ATTLIST hermanosangre codigo IDREFS #REQUIRED>
+  <!ELEMENT hermanopolitico EMPTY>
+  <!ELEMENT hermanastro EMPTY>
+
+  <!ELEMENT primo EMPTY>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Familia SYSTEM "Examen.dtd">
+
+<Familia>
+    <primergrado nombre="Antonio" codigo="A1" relación="mala" edad="57" contacto="nulo"/>
+    <primergrado nombre="Loli" codigo="L1" relación="normal" edad="56"/>
+    <primergrado nombre="Toni" codigo="T1" relación="buena" edad="30"/>
+    <segundogrado nombre="Isabel" codigo="I1" relación="buena" edad="54"/>
+    <segundogrado nombre="Celia" codigo="C1" relación="mala" edad="47" estado="casado"/>    
+    <parentesco>De primer a segundo grado
+        <padres>
+            <padre codigo="A1" />
+            <madre codigo="L1"/>
+        </padres>
+        <hermanos>
+            <hermanosangre codigo="T1"/>
+            <hermanopolitico/>
+        </hermanos>
+        <primo/>
+    </parentesco>
+    <estadocivil>
+        <casado></casado>
+    </estadocivil>
+</Familia>
