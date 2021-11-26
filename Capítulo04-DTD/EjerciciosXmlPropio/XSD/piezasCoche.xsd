@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="piezasCoche" type="tipoPiezasCoche" />
+ 
+  <xs:complexType name="tipoPiezasCoche">
+    <xs:sequence>
+      <xs:element name="coche" type="tipoCoche"/>
+      <xs:element name="piezas" type="tipoPiezas"/>
+      <xs:element name="disponibilidad" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tipoCoche">
+    <xs:attribute name="marca" type="xs:string"/>
+    <xs:attribute name="modelo" type="xs:string"/>
+    <xs:attribute name="anioConstruccion" type="xs:integer"/>
+  </xs:complexType>
+
+  <xs:complexType name="tipoPiezas">
+    <xs:sequence>
+      <xs:element name="motor" type="tipoMotor"/>
+      <xs:element name="neumaticos" type="tipoNeumatico"/>
+      <xs:element name="materialDeChasis" type="tipoMaterialDeChasis"/>
+      <xs:element name="carroceria" type="xs:string"/>
+      <xs:element name="parabrisas" type="xs:string"/>
+      <xs:element name="asientos" type="tipoAsientos"/>
+      <xs:element name="tapiceria" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tipoMotor" mixed="true">
+    <xs:sequence>
+      <xs:element name="modelo" type="tipoModelo"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tipoModelo" mixed="true">
+    <xs:attribute name="potencia" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="tipoNeumatico">
+    <xs:attribute name="anchura" type="xs:integer"/>
+    <xs:attribute name="altura" type="xs:integer"/>
+    <xs:attribute name="diametro" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="tipoMaterialDeChasis">
+    <xs:choice>
+      <xs:element name="aluminio"/>
+      <xs:element name="titanio"/>
+      <xs:element name="tungsteno"/>
+    </xs:choice>
+  </xs:complexType>
+  
+  <xs:complexType name="tipoAsientos">
+  </xs:complexType>
+ 
+</xs:schema>
