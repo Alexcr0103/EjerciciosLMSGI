@@ -2,7 +2,6 @@
 <piezasCoche xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="piezasCoche.xsd">
 
-<piezasCoche>
     <coche marca="Seat" modelo="Ibiza" anioConstruccion="2010"/>
     <piezas>
         <motor>Motor polifacético, con potencia suficiente
