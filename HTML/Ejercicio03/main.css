@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+    .displaynone {
+
+        display: none;
+    }
+}
+
+i:hover {
+    color: orangered !important;    
+}
+
+a:hover {
+    color:orangered !important;
+}
+
+button:hover {
+    color:orangered !important;
+}
+
+
+
